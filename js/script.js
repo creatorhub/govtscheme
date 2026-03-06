@@ -21,10 +21,10 @@ window.history.back();
 
 
 // -----------------------------
-// SEARCH FILTER SYSTEM
+// LIVE SEARCH FILTER SYSTEM
 // -----------------------------
 
-const searchInput = document.querySelector(".search-box input");
+const searchInput = document.getElementById("searchInput");
 
 if (searchInput) {
 
@@ -56,12 +56,12 @@ post.style.display = "none";
 
 
 // -----------------------------
-// SMOOTH SCROLL (Future Use)
+// SMOOTH SCROLL SYSTEM
 // -----------------------------
 
 const links = document.querySelectorAll("a[href^='#']");
 
-links.forEach(link => {
+links.forEach(function(link){
 
 link.addEventListener("click", function(e){
 
@@ -85,7 +85,7 @@ behavior: "smooth"
 
 
 // -----------------------------
-// SIMPLE PAGE LOADER LOG
+// SIMPLE PAGE LOAD MESSAGE
 // -----------------------------
 
 console.log("GovtScheme Portal Loaded Successfully");
